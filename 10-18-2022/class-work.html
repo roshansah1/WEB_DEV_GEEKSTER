@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <script src="https://kit.fontawesome.com/a86d659912.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="container">
+          <div class="header">
+            <h1> 30 days Javascript Challenge Leaderboard </h1>
+          </div>
+          <div class="row">
+            <input type="text" class="input" required="" placeholder=" First Name" />
+            <input type="text" class="input" required="" placeholder=" Last Name" />
+            <input type="text" class="input" required="" placeholder=" Country" />
+            <input type="number" class="input" required="" placeholder="Player Score" />
+            <button class="input add"> Add Player </button>
+          </div>
+          <!-- <div class="player-data">
+            <div class="details">
+              <div class="name-date">
+                <div class="name">
+                  <p> DAVID SMITH </p>
+                </div>
+                <div class="date">
+                  <p class="date-class"> OCT 20, 2022 05:00</p>
+                </div>
+    
+              </div>
+    
+              <P> UNITED KINGDOM</P>
+              <P> 85 </P>
+            </div>
+            <div class="button">
+              <div class="circle">
+                <i class="fa-solid fa-trash-can"></i>
+              </div>
+              <div class="circle">
+                <p> +5 </p>
+              </div>
+              <div class="circle">
+                <p> -5 </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+     <style>
+      html, body {
+  height: 100%;
+  width: 100%;
+}
+* {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+
+        }
+
+        .main-div {
+            background-color: white;
+            height: 100vh;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+          flex-wrap: wrap;
+        }
+
+        .player-data {
+            display: flex;
+            align-items: center;
+            background-color: #E6C7C2;
+            height: 80px;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .details {
+            display: flex;
+            gap: 60px;
+            margin-right: 100px;
+            justify-content: flex-start;
+            align-items: center;
+            height: auto;
+            width: 60%;
+          
+        }
+
+        .circle {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            display: flex;
+            gap: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .input {
+            height: 50px;
+            width: 200px;
+            border: 1px solid #E6C7C2;
+            outline : none;
+            font-size : x-large;
+        }
+         input:focus{
+           border: 3px solid  #E6C7C2;
+           
+         }
+
+        .add {
+            background-color: #E6C7C2;
+            width: 150px;
+            border: none;
+            color: white;
+            font-size: larger;
+        }
+
+        input::placeholder {
+            font-size: x-large;
+        }
+        
+        i{
+            color : rgba(255, 0, 0, 0.678);
+        }
+        p{
+            font-size: larger;
+        }
+        .date-class{
+            color : grey;
+            font-size: small;            
+        }
+          .name-date{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.6rem;
+          }
+          
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+         }
+     </style>
+    <script src="script.js"> </script>
+</body>
+
+</html>

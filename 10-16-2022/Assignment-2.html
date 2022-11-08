@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+       *{
+        box-sizing: border-box;
+        margin: 0;
+       }
+       body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       }
+       .wrapper{
+        display: flex;
+        border : 2px solid black;
+        height : 50vh;
+        width : 800px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding : 20px;
+        gap : 20px;
+        border: none;
+       }
+       .a{
+        border-radius: 10px;
+        background-color: #444444;
+        height : 150px;
+        width : 400px;
+        
+       }
+       .b{
+        border-radius: 10px;
+        background-color: #444444;
+        height : 150px;
+        width : 150px;
+       }
+       .c{
+        border-radius: 10px;
+        background-color: #444444;
+        height : 250px;
+        width : 200px;
+       }
+       .d{
+        border-radius: 10px;
+        background-color: #444444;
+        height : 250px;
+        width : 500px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+       }
+       .first{
+          display: flex;
+          gap : 180px;
+       }
+       .second{
+        display: flex;
+        gap : 30px;
+       }
+       .e{
+        border-radius: 10px;
+        background-color: #cccccc;
+        height : 200px;
+        width : 150px;
+        
+       }
+       .f{
+        border-radius: 10px;
+        background-color: #cccccc;
+        height : 100px;
+        width : 300px;
+        margin-bottom: 150px;
+       }
+       .g{
+        border-radius: 10px;
+        background-color: #cccccc;
+        height : 100px;
+        width : 200px;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 250px;
+       }
+       h1{
+        margin: 20px;
+        color : white;
+       }
+      .black{
+        color: #44433f;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="first">
+
+        <div class="a">
+          <h1> A </h1>  
+        </div>
+        <div class="b">
+            <h1> B </h1>
+        </div>
+    </div>
+    <div class="second">
+        <div class="c">
+            <h1> C </h1>
+        </div>
+        <div class="d">
+            <div class="e"> <h1 class="black"> E </h1> </div>
+            <div class="f"> <h1 class="black"> F </h1> </div>
+            <div class="g"> <h1 class="black"> G </h1> </div>
+            
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <h2> Phone Number </h2>
+        <div class="number">
+            <div>
+                <p> +91 </p>
+            </div>
+            <div class="input-number">
+                <input type="number" class="text">
+            </div>
+        </div>
+        
+        <br>
+        <button> Next </button>
+    </div>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+         }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+        }
+        .main-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            height: 500px;
+            width: 600px;
+            border : 2px solid black;
+        
+        }
+        h2{
+            padding: 15px;
+        }
+        .text{
+            height: 40px;
+            width: 250px;
+            border : none;
+            outline : none;
+            font-size: large;
+            font-weight: bold;
+        }
+        .number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            font-weight: bold;
+            border: 2px solid black;
+            padding: 4px;
+        }
+       button{
+        height: 30px;
+        width: 60px;
+       }
+        
+    </style>
+    <script>
+        let input = document.getElementsByClassName('text')[0];
+        let button = document.getElementsByTagName('button')[0];
+        
+        
+        input.addEventListener('change', () =>{
+            if(input.value.length !== 10){
+                alert("Input must be length 10");
+                return;
+            }if(input.value[0] !== "6" &&
+                input.value[0] !== "7" &&
+                input.value[0] !== "8" &&
+                input.value[0] !== "9") 
+               {
+                alert("number must start with 6,7,8 & 9");
+               }
+        })
+    </script>
+</body>
+</html>

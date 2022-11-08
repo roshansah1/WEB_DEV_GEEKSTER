@@ -1,0 +1,176 @@
+
+        *{
+            box-sizing: border-box;
+            margin : 0;
+            padding : 0;
+        }
+        .wrapper{
+            width : 100%;
+            height : 100vh;
+        }
+        .header{
+            width : 100%;
+            height : 70px;
+            background-color: gainsboro;
+            padding : 20px 50px;
+            display : flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .body{
+            width : 100%;
+            height : calc(100vh - 70px);
+            background-color: grey;
+            padding : 50px;
+        }
+        .left-button{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            height : 120%;
+        }
+        .left-button div{
+            font-size: xx-large;
+            font-weight: bold;
+            height : 100%;
+            width : 100px;
+            border : 1px solid grey;
+            text-align: center;
+
+        }
+        .left-button i{
+            font-size: x-large;
+            color : grey;
+            
+        }
+        .right-button{
+            width : 200px;
+            height : 70%;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-button div{
+            width : 40px;
+            height : 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+        .c1{
+            background-color: red;
+        }
+        .c2{
+           background-color: blue;
+        }
+        .c3{
+           background-color: orange;
+        }
+        .c4{
+           background-color: pink;
+        }
+        .todo{
+            width : 200px;
+            height : 50px;
+            background-color: white;
+            font : x-large;
+            font-weight: bold;
+            margin : 10px;
+            position: relative;
+        }
+        .red::before{
+            content : ' ';
+            position: absolute;
+            height : 100%;
+            width : 10px;
+            top : 0;
+            left : -10px;
+            background-color: red;
+        }
+        .blue::before{
+            content : ' ';
+            position: absolute;
+            height : 100%;
+            width : 10px;
+            top : 0;
+            left : -10px;
+            background-color: blue;
+        }
+        .orange::before{
+            content : ' ';
+            position: absolute;
+            height : 100%;
+            width : 10px;
+            top : 0;
+            left : -10px;
+            background-color: orange;
+        }
+        .addTodoPopup{
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top : 0;
+            left: 0;
+        }
+        .popupDetails{
+            height: 500px;
+            width: 700px;
+            background-color: white;
+        }
+        .todoHead{
+            width: 100%;
+            height : 50px;
+            font-size : x-large;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            border-bottom: 5px solid gainsboro;
+            
+        }
+        .popupBody{
+            height : calc(100% - 50px - 50px)
+        }
+        .todoBody{
+            width: 100%;
+            height : 100%;
+            font-size : x-large;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            padding: 10px;
+        }
+        .popupBtns{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 50px;
+            width: 100%;
+        }
+        .closeBtn{
+            width : 120px;
+            height : 30px;
+            font-size: large;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid orange;
+            margin: 20px;
+        }
+        .submitBtn{
+            width : 120px;
+            height : 30px;
+            font-size: large;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid orange;
+            margin: 20px;
+            background-color:orange;
+        }
+    

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a86d659912.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="form">
+            <p> Text Field </p>
+            <input type="text" class="box" placeholder="Input Text">
+            <p> Select Field </p>
+            <input type="number" class="box" min="1980" max="2022" placeholder="Select">
+            <p> Text Area </p>
+            <textarea placeholder="Text area" class="text-box"></textarea>
+            <p> Text Field with Add-ons </p>
+            <div class="add-on add-button">
+                <input type="text" placeholder="Input Text" class="box">
+                <button class="button"> Button </button>
+            </div>
+            <p> Multiselect Field</p>
+            <select class="multi-select">
+                <option> Html </option>
+                <option> Css </option>
+                <option> Javascript </option>
+                <option> React </option>
+            </select>
+            <div class="right-side">
+                <i class="fa fa-search icon" aria-hidden="true"></i>
+                <input type="text" placeholder= "Search" class="box input-field">
+                <div class="plus-minus"> <span class="toggle">+</span>
+                    <span class="toggle">1</span> <span class="toggle">-</span>
+                </div>
+                <input type="checkbox" class="checkbox">
+                <label> Checkbox </label>
+                <br>
+                <input type="radio" class="checkbox">
+                <label> Radio Button </label>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: lightgray;
+        }
+
+        .main-div {
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            height: 500px;
+            width: 700px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .plus-minus {
+            border: 1px solid grey;
+            border-radius: 5px;;
+            height: 25px;
+            width: 80px;
+            margin-top : 25px;
+            text-align: center;
+            word-spacing: 20px;
+            font-weight: bold;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .add-on {
+            display: flex;
+            gap: 0;
+        }
+
+        .box {
+            border-radius: 5px;
+            height: 30px;
+            width: 250px;
+            border: 1px solid grey;
+            
+        }
+
+        .text-box {
+            height: 60px;
+            width: 250px;
+            border-radius: 5px;
+        }
+
+        .button {
+            border-radius: 5px;
+            border: 1px solid grey;
+            background-color: white;
+            width: 60px;
+        }
+
+        .multi-select {
+            border-radius: 5px;
+            height: 35px;
+            width: 250px;
+        }
+        .right-side{
+            margin: auto;
+            margin-left: 300px;
+            margin-top: -408px;
+        }
+        .checkbox{
+            margin-top: 25px;
+        }
+        .add-button{
+            width : 250px;
+        }
+        i{
+            position: absolute;
+        }
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+        .input-field {
+            width: 100%;
+            text-align : center;
+        }
+    </style>
+    <script>
+
+    </script>
+</body>
+
+</html>

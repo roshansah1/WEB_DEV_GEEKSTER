@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <div id="gallery">
+        <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" >
+    </div>
+</center>
+
+<script>
+    let gallery = document.getElementsByTagName('img')[0];
+     let image = 1;
+    setInterval(() =>{
+        if(image <= 9){
+            image +=1;
+        }else{
+            image = 1;
+        }
+     gallery.src = `https://cdn.freecodecamp.org/curriculum/css-photo-gallery/${image}.jpg`;
+    },1000)
+</script>
+</body>
+</html>

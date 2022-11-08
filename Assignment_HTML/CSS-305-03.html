@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent car</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="sedans card">
+          <img src="https://aituos.github.io/FM--3-Column-Preview-Card-Component/img/icon-sedans.svg">
+          <h1> SEDANS </h1>
+          <p> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip. </p>
+          <a class="learn-more" href="#">Learn More</a>
+        </div>
+        <div class="suvs card">
+          <img src="https://aituos.github.io/FM--3-Column-Preview-Card-Component/img/icon-suvs.svg">
+          <h1> SUVS </h1>
+          <p> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures. </p>
+          <a class="learn-more" href="#">Learn More</a>
+        </div>
+        <div class="luxury card">
+          <img src="https://aituos.github.io/FM--3-Column-Preview-Card-Component/img/icon-luxury.svg">
+          <h1> LUXURY </h1>
+          <p> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. </p>
+          <a class="learn-more" href="#">Learn More</a>
+        </div>
+    </div>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-size: 15px;
+        }
+        .main-div{
+            width: 87vw;
+            max-width: 1000px;
+            height: 45vh;
+            margin: 1rem 0;
+            display: flex;
+        }
+        .sedans{
+            background-color: #e38826;
+            border-radius: 20px 0 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px;
+        }
+        .suvs{
+            background-color: #006970;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px;
+        }
+        .luxury{
+            background-color: #004241;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px;
+        }
+         p{
+            color: #f1f2f2;
+            font-size: large;
+        }
+        h1{ 
+            color: #f1f2f2;
+            font-size:5ch;
+            
+        }
+        img{
+            height: 40px;
+            width: 70px;
+            transition: transform .1s ease;
+        }
+        img:hover{
+            height: 50px;
+            width: 80px;
+        }
+        img:active{
+            transform: translateX(150px);
+        }
+        .learn-more {
+        background-color: #f2f2f2;   
+        width: 125px;
+        height: 50px;
+        text-decoration: none;
+        border-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Lexend Deca";
+        font-size: large;
+        transition: transform .1s ease;
+        } 
+        .learn-more:hover{
+            background-color: rgb(197, 197, 197);
+        }
+        .learn-more:active{
+            transform: translateX(5px);
+        }
+        .sedans .learn-more{
+            color: #e38826;
+        }
+        .suvs .learn-more{
+            color: #006970;
+        }
+        .luxury .learn-more{
+            color: #004241;
+        }
+    </style>
+</body>
+</html>

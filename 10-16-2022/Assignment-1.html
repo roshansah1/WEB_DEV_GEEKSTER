@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a86d659912.js" crossorigin="anonymous"></script>
+    <title>Travel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            font-family: 'Barlow', sans-serif;
+            background-color: #ffe6ca;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .main-container {
+            border: 2px solid black;
+            height: 85vh;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: none;
+            box-shadow: 0px 0px 10px 5px  rgb(175, 174, 174);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            gap : 300px;
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        li {
+            list-style: none;
+        }
+        #logo {
+           color: black;
+           font-weight: bolder;
+           font-size: larger;
+        }
+
+      #highlight {
+        color: red;
+        font-weight: bold;
+        font-size: large;
+        margin-left: -5px;
+       }
+       
+       img {
+    height: 50vh;
+    width : 910px;
+    
+  }
+  ul{
+    display: flex;
+    gap : 20px;
+  }
+  .container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .underline{
+    text-decoration: underline;
+    color : black;
+    text-decoration-color: red;
+  }
+  .previous{
+    border : 1px solid gray;
+    height: 30px;
+    width: 70px;
+  }
+  .button{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 120px;
+    margin-top: 20px;
+  }
+  .next{
+    border : 1px solid gray;
+    height: 30px;
+    width: 70px;
+  }
+  i{
+    text-align: center;
+    margin-left: 20px;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <div class="left">
+                    <p id="logo"> Japan <span id="highlight">.</span></p>
+                </div>
+                <div class="right">
+
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Plan Your Trip</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </nav>
+        <div class="container2">
+            
+            <div class="image-holder">
+                <img src="https://source.unsplash.com/cddaZDt6uRw">
+            </div>
+            <div class="intro">
+                <a href="#">
+                    <h1 class="title"><span class="underline">Explore Tokyo</span></h1>
+                </a>
+                <p class="description">Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit
+                    skyscrapers to historic temples.</p>
+            </div>
+            
+        </div>
+        <div class="button">
+            <div class="previous">
+                <i class='fas fa-long-arrow-alt-left fa-1x'></i>
+            </div>
+            <div class="next">
+                <i class='fas fa-long-arrow-alt-right fa-1x'></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

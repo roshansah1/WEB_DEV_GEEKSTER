@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1> MY BLOG </h1>
+        <p> Welcome to the blog of <span class="roshan">Roshan</span></p>
+    </header>
+    <div class="main-div">
+        <div class="title">
+           <img src="https://www.w3schools.com/w3images/woods.jpg">
+           <h3 class="margin"> TITLE HEADING</h3>
+           <p class="margin"> <strong>Title Description October 2 2022 </strong></p>
+           <p class="margin"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error, nihil voluptate aspernatur quo natus aut assumenda perferendis, possimus id deleniti culpa 
+            accusantium mollitia molestias magni saepe. Cupiditate, quis at.</p>
+            <button>
+                READ MORE >>
+            </button>
+        </div>
+        <div class="name-tag">
+            <div class="name">
+                <img src="https://www.w3schools.com/w3images/woods.jpg">
+               <h3 class="margin"> My Name</h3>
+               <p class="margin"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia natus numquam ullam, sequi optio voluptatibus
+                 at doloribus magnam vero vel facere consequuntur! Hic ipsum cum facere aliquid quasi vitae aliquam.</p>
+            </div>
+            <div class="tags">
+                <div class="tag-name">
+                    <p class="p-tag"> Tags </p>
+                </div>
+              <div class="tag-list">
+                <p class="p-tag black"> Travel </p>
+                <p class="p-tag"> Funny </p>
+                <p class="p-tag"> News </p>
+                <p class="p-tag"> Photos </p>
+                <p class="p-tag"> Videos </p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+        .main-div{
+            display: flex;
+            justify-content: space-around;
+            margin : 20px;
+            
+        }
+        .title{
+            box-shadow: 0px 0px 8px 0px white;
+            margin : 30px;
+            background-color: white;
+        }
+        .name-tag{
+            margin : 20px;
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .name{
+            background-color: white;
+            margin : 10px;
+            box-shadow: 0px 0px 8px 0px white;
+        }
+        .tags{
+            background-color: white;
+            margin : 10px;
+            box-shadow: 0px 0px 8px 0px white;
+            
+            
+        }
+        .tag-name{
+            background-color: grey;
+            height: 50px;
+            display: flex;
+            box-shadow: 0px 0px 8px 0px white;
+            
+        }
+        .tag-list{
+            display: flex;
+            box-shadow: 0px 0px 8px 0px white;
+        }
+
+        .header{
+           text-align: center;
+        }
+        .p-tag{
+            margin: 20px;
+            background-color: gray;
+            box-shadow: 0px 0px 8px 0px grey;
+            width: 50px;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+        .margin{
+            margin-left: 20px;
+        }
+        button{
+            margin : 20px;
+            height: 30px;
+        }
+        .roshan{
+            display:inline-block;
+            color:white; 
+            background-color : black;
+            width: 60px;
+        }
+        .black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</body>
+</html>

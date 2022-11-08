@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-div">
+        <div id="lift">
+
+        </div>
+    </div>
+
+    <style>
+        *{
+            box-sizing : border-box;
+            margin : 0;
+        }
+        body{
+           display  : flex;
+           justify-content: center;
+           
+        }
+        #main-div{
+            border : 3px solid grey;
+            height : 800px;
+            width : 500px;
+            display : flex;
+            justify-content: center;
+            background-color: bisque;
+        }
+
+        #lift{
+            border : 3px solid rgb(243, 7, 7);
+            height : 200px;
+            width : 100px;
+            background-color: aqua;
+        }
+    </style>
+
+    <script>
+        const lift = document.getElementById("lift");
+        let marginTop = 0;
+        let direction = "down";
+        setInterval(() =>{
+            if (direction === "down") {
+          marginTop += 2;
+        } else {
+          marginTop -= 2;
+        }
+         lift.style.marginTop = `${marginTop}px`;
+         lift.style.backgroundColor = lift.style.backgroundColor === "aqua" ? "yellow" : "aqua";
+         if (marginTop === 600 || marginTop === 0) {
+          direction = direction === "down" ? "up" : "down";
+        }
+        },10)
+        
+        
+        
+    </script>
+</body>
+</html>

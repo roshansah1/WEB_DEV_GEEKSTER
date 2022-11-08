@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-div">
+        <div id="name-div">
+           <p> Roshan </p>
+        </div>
+    </div>
+ 
+    <style>
+      *{
+        margin : 0;
+        box-sizing: border-box;
+      }
+       body{
+        display : flex;
+       }
+        #main-div{
+            border : 3px solid gray;
+            display : flex;
+            height : 500px;
+            width : 800px;
+        }
+        #name-div{
+            border : 3px solid red;
+            height : 150px;
+            width : 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        
+        let box = document.getElementById('main-div');
+           let array = [{
+            "justify-content" : "flex-start",
+            "align-items" : "flex-start",
+           },{
+            "justify-content" : "center",
+            "align-items" : "flex-start",
+           },
+           {
+            "justify-content" : "flex-end",
+            "align-items" : "flex-start",
+           },
+           {
+            "justify-content" : "flex-end",
+            "align-items" : "center",
+           },{
+            "justify-content" : "flex-end",
+            "align-items" : "flex-end",
+           },
+           {
+            "justify-content" : "center",
+            "align-items" : "flex-end",
+           },
+           {
+            "justify-content" : "flex-start",
+            "align-items" : "flex-end",
+           },
+           {
+            "justify-content" : "flex-start",
+            "align-items" : "center",
+           }];
+ 
+           let name = ["Roshan", "Manish", "Ajay" , "Mukesh", "Niraj", "Mayank", "krishna", "Rahul"]
+
+           let names = document.getElementsByTagName('p')[0];
+          
+          let index = 0;
+        setInterval(() =>{
+                index++;
+                box.style.justifyContent = array[index]["justify-content"];
+                box.style.alignItems = array[index]["align-items"];
+                names.innerText = name[index]
+                if(index === array.length-1){
+                   index = -1;
+                }
+          
+        },1000)
+    </script>
+</body>
+</html>

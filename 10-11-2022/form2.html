@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <h1> Step - 2</h1>
+        </div>
+        
+        <div class="code-otp">
+            <div class="code1">
+                <input type="number" class="input">
+            </div>
+           
+            <div class="code1">
+                <input type="number" class="input">
+            </div>
+            <div class="code1">
+                <input type="number" class="input">
+            </div>
+            <div class="code1">
+                <input type="number" class="input">
+            </div>
+        </div>
+        <div>
+        <button> Verify </button>
+        </div>
+    </div>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+         }
+        *{
+            margin : 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-div{
+            display: flex;
+            flex-direction: column;
+            border : 2px solid black;
+            height : 500px;
+            width : 600px;
+            justify-content: center;
+            align-items: center;
+           /* justify-content: space-around; */
+            gap : 50px;
+        }
+        .code-otp{
+            display: flex;
+            justify-content: space-between;
+            gap : 20px;
+        }
+        .input{
+            height: 50px;
+            width: 50px;
+            font-weight: bolder; 
+            font-size: xx-large;
+        }
+        button{
+            height: 40px;
+            width : 60px;
+        }
+        
+    </style>
+    <script>
+        let inputs = document.getElementsByClassName('input');
+        
+        
+        for(let i = 0; i < inputs.length; i++) {
+            let input = inputs[i];
+            input.addEventListener("keypress", () => {
+                input.value = "";
+            });
+          input.addEventListener("keyup", () => {
+            if(i < inputs.length-1){
+               inputs[i + 1].focus();
+            }
+        });
+            
+        }
+    </script>
+</body>
+</html>

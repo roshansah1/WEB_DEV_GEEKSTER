@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="start()">
+        <h1> start </h1>
+    </button>
+    <h1> 0 </h1>
+    <button onclick="stop()">
+        <h1> stop </h1>
+    </button>
+
+    <script>
+        let numberNode = document.getElementsByTagName('h1')[1];
+
+        let number = parseInt(numberNode.innerHTML);
+        
+        let interval;
+        function start() {
+            
+            
+            interval = setInterval(() => {
+                number += 1;
+                numberNode.innerText = number;
+            },1000)
+        }
+
+        function stop() {
+            numberNode.innerText = number;
+            clearInterval(interval);
+        }
+    </script>
+</body>
+</html>

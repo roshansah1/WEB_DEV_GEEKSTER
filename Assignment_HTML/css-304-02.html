@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="main-div"> 
+        <div class="content">
+            <h2> Subscribe to MammothNews</h2>
+            <input type="text" placeholder="Name*">
+            <input type="text" placeholder="Surname*">
+            <input type="email" placeholder="Email*">
+            <input type="date" placeholder="BirthDay" required>
+            <span class="checkbox"> <input class="box" type="checkbox"> <p> I have read and accept the terms and conditions. View our Terms and Conditions.</p> </span>
+            <span> <input class="button" type="submit"> </span>
+        </div>
+    </div>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color : white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-div{
+            height: 70vh;
+            width: 600px;
+            background-color: black; 
+            
+            
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       input{
+        height: 60px;
+        width: 500px;
+        font-size: x-large;
+       }
+       h2{
+        margin-top: 20px;
+        margin-right: 180px;
+       }
+       .checkbox{
+        display: flex;
+        gap: 20px;
+        width: 500px;
+       }
+       .box{
+        height: 30px;
+        width: 35px;
+        background-color: white;
+        border-radius: 20%;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        appearance: none;
+        -webkit-appearance: none;
+        }
+       .box:checked {
+        background-color: rgb(247, 0, 255);
+       }
+       .button{
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        font-size: larger;
+       }
+       input::placeholder{
+        font-size: large;
+        color: rgba(0, 0, 0, 0.801);
+        padding: 20px;
+        font-family: normal;
+       }
+       input[type="date"]::before {
+	   color: rgba(0, 0, 0, 0.801);
+	   content: attr(placeholder);
+       padding : 20px;
+       font-size: large;
+       font-family: normal;
+      }
+     input[type="date"] {
+	  color: #ffffff;
+      }
+     input[type="date"]:focus,
+     input[type="date"]:valid {
+	 color: rgba(0, 0, 0, 0.801);
+     font-size: large;
+      }
+      input[type="date"]:focus::before,
+      input[type="date"]:valid::before {
+	  content: "" !important;
+      }
+    </style>
+</body>
+</html>

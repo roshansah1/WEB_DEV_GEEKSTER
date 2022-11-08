@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head>
+<body>
+    <main>
+        <header>
+            <button> HOME </button>
+            <button> ABOUT </button>
+            <img src="https://i.postimg.cc/3NmKkjwK/Screenshot-2022-10-28-174836.png">
+            <button> MENU </button>
+            <button> CONTACT </button>
+        </header>
+        <div class="container">
+            <div class="row-1">
+                <div class="box-1">
+                    <div class="inner-row-1">
+                        <div class="box-4"><img class="image-1" src="https://i.postimg.cc/xT2MrHB9/Screenshot-2022-11-03-003816.png"> </div>
+                        <div class="box-5"><img class="image-1" src="https://i.postimg.cc/J0fGqwJN/Screenshot-2022-11-03-003859.png"></div>
+                    </div>
+                    <div class="inner-row-2">
+                        <div class="box-6"><img class="image-1" src="https://i.postimg.cc/5NkJQcLy/Screenshot-2022-11-03-004559.png"></div>
+                        <div class="box-7"><img class="image-1" src="https://i.postimg.cc/KYthWRV3/Screenshot-2022-11-03-004618.png"></div>
+                    </div>
+                </div>
+                <div class="box-2"><img class="image-1" src="https://i.postimg.cc/9f2cCdyY/Screenshot-2022-11-03-004911.png"></div>
+                <div class="box-3"><img class="image-1" src="https://i.postimg.cc/LXn9bHzc/Screenshot-2022-11-03-004935.png"></div>
+            </div>
+            <div class="row-2">
+                <div class="box-8"><img class="image-1" src="https://i.postimg.cc/j5pD6WGg/Screenshot-2022-11-03-005212.png"></div>
+                <div class="box-9"><img class="image-1" src="https://i.postimg.cc/L89nVFbp/Screenshot-2022-11-03-005238.png"></div>
+                <div class="box-10"><img class="image-1" src="https://i.postimg.cc/ZRdRqbCr/Screenshot-2022-11-03-005304.png"></div>
+            </div>
+            <div class="before-footer"></div>
+            <footer>
+                <div class="left-content">
+                  <p> HOME </p>
+                  <p> ABOUT </p>
+                  <p> MENU </p>
+                  <p> CONTACT </p>
+                  <hr>
+                  <p> &copy; MERCER TAVERN 2013</p>
+                </div>
+                <div class="right-content">
+                    <P> SITE BY ROSHAN </P>
+                </div>
+            </footer>
+        </div>
+       
+    </main>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 15vh;
+            background-color: #fefefc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        button{
+            width: 100px;
+            height: 25px;
+            background-color: #291d12;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .container{
+            height: 85vh;
+        }
+        .row-1{
+            height: 50%;
+            width: 100%;
+            display: flex;
+        }
+        .box-1{
+            height: 100%;
+            width: 50%;
+            border: 2px solid black;
+        }
+        .box-2{
+            height: 100%;
+            width: 20%;
+            border-top: 4px solid black;
+            border-bottom: 2px solid black;
+            border-right: 4px solid black;
+        }
+        .box-3{
+            height: 100%;
+            width: 30%;
+            border-top: 4px solid black;
+            border-bottom: 2px solid black;
+        }
+        .box-4{
+            border: 2px solid black;
+            height: 100%;
+            width: 40%;
+        }
+        .image-1{
+            height: 100%;
+            width: 100%;
+        }
+
+        .box-5{
+            border: 2px solid black;
+            height:100%;
+            width: 60%
+        }
+        .inner-row-1{
+            display: flex;
+            height: 40%;
+            width: 100%;
+        }
+        .box-6{
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+            height: 100%;
+            width: 60%;
+        }
+        .box-7{
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+            height:100%;
+            width: 60%
+        }
+        .inner-row-2{
+            display: flex;
+            height: 60%;
+            width: 100%;
+        }
+        .box-8{
+            border: 2px solid black;
+            border-bottom: 4px solid black;
+            height:100%;
+            width: 30% 
+        }
+        .box-9{
+            border: 2px solid black;
+            border-bottom: 4px solid black;
+            height:100%;
+            width: 42% 
+        }
+        .box-10{
+            border: 2px solid black;
+            border-bottom: 4px solid black;
+            height:100%;
+            width: 28% 
+        }
+        .row-2{
+            height: 40%;
+            width: 100%;
+            display: flex;
+        }
+        .before-footer{
+            height: 2.4%;
+            width: 100%;
+            background-color: #fefefc;
+        }
+        footer{
+            height: 7.6%;
+            background-color: #e0dbd7;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .left-content{
+            display: flex;
+            gap: 20px; 
+        }
+        footer p{
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>

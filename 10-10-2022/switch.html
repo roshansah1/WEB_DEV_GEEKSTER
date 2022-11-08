@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="button">
+             <div class="inside-button">
+
+             </div>
+        </div>
+        <div class="switch">
+            <h1> OFF </h1>
+        </div>
+    </div>
+    <style>
+        *{
+            margin : 0;
+        }
+        .main-div{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            gap : 15px;
+            margin-top: 100px;
+        }
+        .button{
+            border-radius: 40px; 
+            background-color: rgb(231, 229, 229);
+            height : 4vh;
+            width : 80px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            box-shadow: 0px 0px 5px 2px rgb(218, 216, 216) inset;
+        }
+        .inside-button{
+            display: flex;
+            background-color: white;
+            height : 30px;
+            width : 30px;
+            border-radius: 50%;
+            margin-left: 5px;
+            box-shadow: 0px 0px 5px 2px rgb(197, 195, 195);
+        }
+    </style>
+  
+    <script>
+    let switchOn = document.getElementsByTagName('h1')[0];
+    console.log(switchOn)
+
+    let button = document.getElementsByClassName('inside-button')[0];
+    let marginLeft = 0;
+    let value = 0;
+    button.addEventListener("click", toggle);
+
+    function toggle(){
+        let interval = setInterval(() => {
+            if(value === 0){
+                marginLeft += 1;
+                button.style['margin-left'] = `${marginLeft}px`
+                switchOn.innerText = "ON";
+                switchOn.style["color"] = "green";
+                if(marginLeft === 45){
+                  value = 1;
+                clearInterval(interval);
+                }
+            }else{
+                marginLeft -= 1;
+                button.style['margin-left'] = `${marginLeft}px`
+                switchOn.innerText = "OFF";
+                switchOn.style["color"] = "red"
+                if(marginLeft === 5){
+                      value = 0;
+                      clearInterval(interval);
+                }
+            }
+        },5)
+    }
+
+    </script>
+</body>
+</html>
